@@ -45,7 +45,7 @@ import com.ryg.utils.DLConstants;
 
 /**
  * note: can use that like this.
- * 
+ * 插件中Activity需要继承的
  * @see {@link DLBasePluginActivity.that}
  * @author renyugang
  */

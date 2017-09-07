@@ -44,6 +44,9 @@ import com.ryg.dynamicload.internal.DLPluginManager;
 import com.ryg.dynamicload.internal.DLPluginPackage;
 import com.ryg.utils.DLConstants;
 
+/**
+ * 插件中Activity需要继承的
+ */
 public class DLBasePluginFragmentActivity extends FragmentActivity implements DLPlugin {
 
     private static final String TAG = "DLBasePluginFragmentActivity";

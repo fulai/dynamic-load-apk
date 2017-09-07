@@ -34,6 +34,9 @@ import com.ryg.dynamicload.internal.DLAttachable;
 import com.ryg.dynamicload.internal.DLPluginManager;
 import com.ryg.dynamicload.internal.DLProxyImpl;
 
+/**
+ * FragmentActivity代理基类
+ */
 public class DLProxyFragmentActivity extends FragmentActivity implements DLAttachable {
 
     protected DLPlugin mRemoteActivity;

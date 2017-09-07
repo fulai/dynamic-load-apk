@@ -40,7 +40,7 @@ import java.lang.reflect.Constructor;
  * This is a plugin activity proxy, the proxy will create the plugin activity
  * with reflect, and then call the plugin activity's attach、onCreate method, at
  * this time, the plugin activity is running.
- * 
+ * activity具体实现
  * @author mrsimple
  */
 public class DLProxyImpl {

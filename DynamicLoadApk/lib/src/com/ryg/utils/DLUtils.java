@@ -56,10 +56,10 @@ public class DLUtils {
         if (pkgInfo == null) {
             return null;
         }
-
         // Workaround for http://code.google.com/p/android/issues/detail?id=9151
         ApplicationInfo appInfo = pkgInfo.applicationInfo;
         if (Build.VERSION.SDK_INT >= 8) {
+            /* 必须加这两句，不然下面icon获取是default icon而不是应用包的icon */
             appInfo.sourceDir = apkFilepath;
             appInfo.publicSourceDir = apkFilepath;
         }

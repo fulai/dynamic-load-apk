@@ -27,7 +27,8 @@ import dalvik.system.DexClassLoader;
 /**
  * A plugin apk. Activities in a same apk share a same AssetManager, Resources
  * and DexClassLoader.
- * 
+ * 插件apk的Package
+ *
  * @author siyu.song
  */
 public class DLPluginPackage {
@@ -40,7 +41,7 @@ public class DLPluginPackage {
     public PackageInfo packageInfo;
 
     public DLPluginPackage(DexClassLoader loader, Resources resources,
-            PackageInfo packageInfo) {
+                           PackageInfo packageInfo) {
         this.packageName = packageInfo.packageName;
         this.classLoader = loader;
         this.assetManager = resources.getAssets();

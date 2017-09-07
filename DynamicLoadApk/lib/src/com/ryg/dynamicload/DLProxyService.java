@@ -12,6 +12,9 @@ import android.os.Build;
 import android.os.IBinder;
 import android.util.Log;
 
+/**
+ * Service代理基类
+ */
 public class DLProxyService extends Service implements DLServiceAttachable{
     
     private static final String TAG = "DLProxyService";

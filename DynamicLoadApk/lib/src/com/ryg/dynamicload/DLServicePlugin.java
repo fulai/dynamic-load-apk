@@ -8,6 +8,9 @@ import android.os.IBinder;
 
 import com.ryg.dynamicload.internal.DLPluginPackage;
 
+/**
+ * Service生命周期对应接口
+ */
 public interface DLServicePlugin {
 
     public void onCreate(); 

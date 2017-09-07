@@ -28,6 +28,9 @@ import android.view.WindowManager.LayoutParams;
 
 import com.ryg.dynamicload.internal.DLPluginPackage;
 
+/**
+ * activity生命周期对应接口
+ */
 public interface DLPlugin {
 
     public void onCreate(Bundle savedInstanceState);

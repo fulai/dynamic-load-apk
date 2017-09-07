@@ -1,11 +1,5 @@
 package com.ryg.dynamicload.internal;
 
-import java.lang.reflect.Constructor;
-
-import com.ryg.dynamicload.DLServicePlugin;
-import com.ryg.utils.DLConfigs;
-import com.ryg.utils.DLConstants;
-
 import android.annotation.TargetApi;
 import android.app.Service;
 import android.content.Intent;
@@ -13,6 +7,15 @@ import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
 
+import com.ryg.dynamicload.DLServicePlugin;
+import com.ryg.utils.DLConfigs;
+import com.ryg.utils.DLConstants;
+
+import java.lang.reflect.Constructor;
+
+/**
+ * 服务实现
+ */
 public class DLServiceProxyImpl {
     
     private static final String TAG = "DLServiceProxyImpl";

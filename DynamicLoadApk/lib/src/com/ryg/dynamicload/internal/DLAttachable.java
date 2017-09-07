@@ -22,6 +22,7 @@ import com.ryg.dynamicload.DLPlugin;
 
 /**
  * @author mrsimple
+ * activity关联接口
  */
 public interface DLAttachable {
     /**

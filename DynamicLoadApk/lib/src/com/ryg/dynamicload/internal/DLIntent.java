@@ -25,10 +25,10 @@ import com.ryg.utils.DLConfigs;
 
 import java.io.Serializable;
 
+/**
+ * 插件Intent
+ */
 public class DLIntent extends Intent {
-    
-    
-
     private String mPluginPackage;
     private String mPluginClass;
 

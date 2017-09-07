@@ -27,6 +27,9 @@ import com.ryg.dynamicload.internal.DLPluginPackage;
 import com.ryg.utils.DLConstants;
 import com.ryg.utils.LOG;
 
+/**
+ * 插件中Service需要继承的
+ */
 public class DLBasePluginService extends Service implements DLServicePlugin {
 
     public static final String TAG = "DLBasePluginService";
