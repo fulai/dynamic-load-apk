@@ -46,4 +46,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="start plugin b" />
+
+    <Button
+        android:id="@+id/start_main_a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="start main a" />
+
 </LinearLayout>

@@ -1,6 +1,7 @@
 
 package com.ryg.dynamicload.sample.mainplugin;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -27,6 +28,7 @@ public class TestFragmentActivity extends DLBasePluginFragmentActivity
     private Button mShowFragmentButton;
 
     private Button mStartPluginB;
+    private Button mstartMainA;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,9 @@ public class TestFragmentActivity extends DLBasePluginFragmentActivity
 
         mStartPluginB = (Button) findViewById(R.id.start_plugin_b);
         mStartPluginB.setOnClickListener(this);
+
+        mstartMainA = (Button) findViewById(R.id.start_main_a);
+        mstartMainA.setOnClickListener(this);
     }
 
     @Override
@@ -86,8 +91,17 @@ public class TestFragmentActivity extends DLBasePluginFragmentActivity
             int result = startPluginActivity(new DLIntent("com.ryg.dynamicload.sample.mainpluginb",
                     ".MainActivity"));
             if (result != DLPluginManager.START_RESULT_SUCCESS) {
-                Toast.makeText(this, "start Activity failed", Toast.LENGTH_SHORT).show();
+                Toast.makeText(that, "start Activity failed", Toast.LENGTH_SHORT).show();
             }
+        } else if (v == mstartMainA) {
+            /**
+             * 启动宿主activity
+             */
+            Intent intent = new Intent();
+            intent.setClassName("com.ryg.dynamicload.sample.mainhost", "com.ryg.dynamicload.sample.mainhost.MainActivity");
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+            that.startActivity(intent);
+
         }
 
     }

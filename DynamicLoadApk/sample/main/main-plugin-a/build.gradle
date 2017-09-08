@@ -33,8 +33,9 @@ android {
 }
 
 dependencies {
-    provided files('../../../lib/build/libs/lib.jar')
+    //    provided files('../../../lib/build/libs/lib.jar')
     provided files('external-jars/android-support-v4.jar')
+    compile project(':lib')
 }
 
 task beforeBuild(dependsOn: ':lib:buildLib') << {
